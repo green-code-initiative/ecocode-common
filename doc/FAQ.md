@@ -3,7 +3,7 @@ Frequently Ask Questions
 
 ## I'm using default `Sonar Way` rules (with default `Sonar Way` profile). When I install one of creedengo plugins (ex : `creedengo-java plugin`), are new creedengo rules installed ? and how does the plugin do this ?
 
-> When an creedengo plugin is installed by the marketplace, the rules are immediately available on SonarQube. You can find them if you go to "rules" tab, and select rules with tag `eco-design`. 
+> When an creedengo plugin is installed by the marketplace, the rules are immediately available on SonarQube. You can find them if you go to "rules" tab, and select rules with tag `creedengo`. 
 > 
 > But by default, creedengo rules aren't set to an existing Sonarqube profile.
 > 
