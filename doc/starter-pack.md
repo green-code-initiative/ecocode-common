@@ -46,7 +46,7 @@ For example, you’ll be able to access of all the `for` loops, to explore conte
 
 To better understand AST structure, you can use the [AST Explorer](https://astexplorer.net/) and select the language of the code you want to explore.
 
-The JavaScript Sonar plugin works differently because it doesn't parse the code to transform it into an AST itself, it use the ESLint engine which will do it itself ([More information here](https://github.com/green-code-initiative/creedengo-javascript/blob/main/CONTRIBUTING.md)). The good part is that it means that all creedengo JavaScript rules are made available both to Sonar and to [ESLint](https://eslint.org/) through an [creedengo ESLint plugin](https://www.npmjs.com/package/@creedengo/eslint-plugin).
+The JavaScript Sonar plugin works differently because it doesn't parse the code to transform it into an AST itself, it use the ESLint engine which will do it itself ([More information here](https://github.com/green-code-initiative/ecoCode-javascript/blob/main/CONTRIBUTING.md)). The good part is that it means that all Creedengo JavaScript rules are made available both to Sonar and to [ESLint](https://eslint.org/) through an [Creedengo ESLint plugin](https://www.npmjs.com/package/@ecocode/eslint-plugin).
 
 ## Gitflow
 
@@ -58,7 +58,7 @@ please check following section
 ## Github Green-Code-Initiative
 
 - common part (doc / tools) : <https://github.com/green-code-initiative/creedengo-common>
-- rules specification : <https://github.com/green-code-initiative/creedengo-rules-specifications>
+- rules specification : <https://github.com/green-code-initiative/ecoCode>
 - several mobile repositories
 - several standard repositories
 - several test project repositories
@@ -102,7 +102,7 @@ PS : if you have some problems with this script, please feel free to create a ne
 
 ### Method 2 - Manual check (if above "method 1" doesn't work)
 
-If you want, you can check following file to know what are min and max versions for each tool : <https://github.com/green-code-initiative/creedengo-common/blob/main/tools/check_requirements/config.txt>
+If you want, you can check following file to know what are min and max versions for each tool : <https://github.com/green-code-initiative/ecoCode-common/blob/main/tools/check_requirements/config.txt>
 
 Then launch check commands as follows (and check versions displayed) :
 
@@ -132,7 +132,7 @@ You will find all steps to start and configure your local Sonarqube dev Environm
 
 - 1st step - build your local plugin: <https://github.com/green-code-initiative/creedengo-common/blob/main/doc/HOWTO.md#howto-build-the-sonarqube-creedengo-plugins>
 - 2nd step - launch local Sonarqube (with installation of previous local plugin built) : <https://github.com/green-code-initiative/creedengo-common/blob/main/doc/HOWTO.md#howto-install-sonarqube-dev-environment>
-- 3rd step - check that local environment is running perfectly : choose one of repositories with suffix "test-project" (ex : <https://github.com/green-code-initiative/creedengo-java-test-project/tree/main>)
+- 3rd step - check that local environment is running perfectly : choose one of repositories with suffix "test-project" (ex : <https://github.com/green-code-initiative/creedengo-javascript-test-project/tree/main>)
   - next, launch script `tool_send_to_sonar.sh` (using previous secruitty token created on the first step)
   - finally, open local SonarQube GUI (<http://localhost:9000>) to verify if alone project raises creedengo errors
 
@@ -152,17 +152,17 @@ Many ways to do this :
 
 | Plugin Language | Plugin Rules Ideas                                                                                                                                                                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Java            | [💡 rule-idea](https://github.com/green-code-initiative/creedengo-java/issues?q=is%3Aissue+is%3Aopen+label%3A%F0%9F%92%A1rule-idea)                                                                                                               |
-| JavaScript      | [🗃️ rule or 💡 rule-idea](https://github.com/green-code-initiative/creedengo-javascript/issues?q=is%3Aopen+is%3Aissue+label%3A%22%F0%9F%92%A1+rule-idea%22%2C%22%F0%9F%97%83%EF%B8%8F+rule%22+label%3A%22%F0%9F%8F%86+challenge+%F0%9F%8F%86%22) |
-| HTML            | [🗃️ rule or 💡 rule-idea](https://github.com/green-code-initiative/creedengo-html/issues?q=is%3Aopen+is%3Aissue+label%3A%22%F0%9F%92%A1+rule-idea%22%2C%22%F0%9F%97%83%EF%B8%8F+rule%22+label%3A%22%F0%9F%8F%86+challenge+%F0%9F%8F%86%22)       |
+| Java            | [💡 rule-idea](https://github.com/green-code-initiative/ecoCode-java/issues?q=is%3Aissue+is%3Aopen+label%3A%F0%9F%92%A1rule-idea)                                                                                                               |
+| JavaScript      | [🗃️ rule or 💡 rule-idea](https://github.com/green-code-initiative/ecoCode-javascript/issues?q=is%3Aopen+is%3Aissue+label%3A%22%F0%9F%92%A1+rule-idea%22%2C%22%F0%9F%97%83%EF%B8%8F+rule%22+label%3A%22%F0%9F%8F%86+challenge+%F0%9F%8F%86%22) |
+| HTML            | [🗃️ rule or 💡 rule-idea](https://github.com/green-code-initiative/ecoCode-html/issues?q=is%3Aopen+is%3Aissue+label%3A%22%F0%9F%92%A1+rule-idea%22%2C%22%F0%9F%97%83%EF%B8%8F+rule%22+label%3A%22%F0%9F%8F%86+challenge+%F0%9F%8F%86%22)       |
 |                 |                                                                                                                                                                                                                                                 |
 
 - second way : choose a rule in following tables 
-  - [Web rules](https://github.com/green-code-initiative/creedengo/blob/main/RULES.md)
-  - [Android (Java) rules](https://github.com/green-code-initiative/creedengo-android/blob/main/android-plugin/RULES.md)
-  - [iOS (Swift) rules](https://github.com/green-code-initiative/creedengo-ios/blob/main/RULES.md)
+  - [Web rules](https://github.com/green-code-initiative/ecoCode/blob/main/RULES.md)
+  - [Android (Java) rules](https://github.com/green-code-initiative/ecoCode-android/blob/main/android-plugin/RULES.md)
+  - [iOS (Swift) rules](https://github.com/green-code-initiative/ecoCode-ios/blob/main/RULES.md)
 - third way : check rule ideas in Kanban project board [here](https://github.com/orgs/green-code-initiative/projects/1) and select implementable (or hardly implementable) ticket, and create an issue in the right language repositoyr
-- fourth way : Go and give a hand to the [spotters team](https://github.com/green-code-initiative/creedengo-challenge/blob/main/spotters.md) who will give you some rules to implement
+- fourth way : Go and give a hand to the [spotters team](https://github.com/green-code-initiative/ecoCode-challenge/blob/main/spotters.md) who will give you some rules to implement
 
 ## Check `Definition Of Done` for new rule implementation
 
@@ -178,14 +178,14 @@ For a new rule implementation, we strongly recommend you to follow this check-li
 - [ ] Write Unit tests (and maximize code coverage)
 - [ ] Update `RULES.md` file
 - [ ] Update `CHANGELOG.md` file (inside `Unreleased` section)
-- [ ] Create PR on the real test project to add a triggering case (check [local procedure](https://github.com/green-code-initiative/creedengo-common/blob/main/doc/starter-pack.md#start-local-environment))
+- [ ] Create PR on the real test project to add a triggering case (check [local procedure](https://github.com/green-code-initiative/ecoCode-common/blob/main/doc/starter-pack.md#start-local-environment))
 - [ ] Fix potential SonarCloud issues / out-of-date warnings (report is sent after creating PR)
 - [ ] In next review step, reviewer will ask you to use a specific id rule if you have chosen a random one
 
 ## Test your rule implementation
 
 - First kind of test : Unit tests (please check `Definition of Done` above)
-- Second kind of test : End-to-End tests in a real local environment (please check `Definition of Done` above and [local procedure](https://github.com/green-code-initiative/creedengo-common/blob/main/doc/starter-pack.md#start-local-environment) )
+- Second kind of test : End-to-End tests in a real local environment (please check `Definition of Done` above and [local procedure](https://github.com/green-code-initiative/ecoCode-common/blob/main/doc/starter-pack.md#start-local-environment) )
 
 > Each rule needs to have scripts in a specific language (i.e. Python, Rust, JS, PHP and JAVA) in order to test directly inside Sonarqube that the rule has been implemented.
 > To validate that the rule has been implemented, you need to execute a scan on those scripts. You will need sonar scanner: <https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/>
@@ -233,5 +233,5 @@ Here is the SonarQube : <https://sonarcloud.io/organizations/green-code-initiati
 
 ## Close your rule
 
-Once your PR is validated, your rule integrates creedengo. In <https://github.com/cnumr/creedengo/projects/1>, move it from the "In Progress" column to the "Done" column.
+Once your PR is validated, your rule integrates creedengo. In <https://github.com/cnumr/ecoCode/projects/1>, move it from the "In Progress" column to the "Done" column.
 Well done.

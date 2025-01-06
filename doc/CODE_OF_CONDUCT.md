@@ -1,12 +1,11 @@
 # Code of Conduct - Creedengo
 
-- [Code of Conduct - Creedengo](#code-of-conduct---creedengo)
-  - [Our Pledge](#our-pledge)
-  - [Our Standards](#our-standards)
-  - [Our Responsibilities](#our-responsibilities)
-  - [Scope](#scope)
-  - [Enforcement](#enforcement)
-  - [Attribution](#attribution)
+- [Our Pledge](#our-pledge)
+- [Our Standards](#our-standards)
+- [Our Responsibilities](#our-responsibilities)
+- [Scope](#scope)
+- [Enforcement](#enforcement)
+- [Attribution](#attribution)
 
 ## Our Pledge
 

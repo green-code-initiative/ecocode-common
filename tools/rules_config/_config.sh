@@ -36,7 +36,7 @@ TAG_ECODESIGN=creedengo
 FILEPATH_SONAR_RULES_REUSED='./SONAR_RULES_REUSED.md'
 
 # name quality profile to create with "install_profile.sh" tool
-PROFILE_ECODESIGN="creedengoProfile"
+PROFILE_ECODESIGN="CreedengoProfile"
 
 # programming languages list to create with "install_profile.sh" tool
 PROFILES_LANGUAGE_KEYS=php,py,java,cs
