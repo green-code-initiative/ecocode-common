@@ -302,7 +302,7 @@ mvn license:format
 
 ### Create a release on DYNAMIC versionning system module
 
-This is the use case for `creedengo` repository
+This is the use case for `creedengo-rules-specifications` repository
 
 1. **upgrade `CHANGELOG.md`** : add release notes for next release
     1. **Replace `Unreleased` title** with the new version like `Release X.Y.Z` and the date
@@ -406,7 +406,7 @@ Because publish process of `creedengo-rules-specifications` on Maven Central nee
 
 ### Maven Central publish process
 
-- go to "Action" tab of `creedengo` repository
+- go to "Action" tab of `creedengo-rules-specifications` repository
 - click on "Publish to Maven Central" workflow
 - click on "Run workflow" list button
 - choose a tag version (and not a branch because SNAPSHOT version won't be published on Maven Central)
@@ -452,7 +452,7 @@ If we want use another account, we need to change these values by generating new
 GPG system is used to sign JAR files before publishing them to Maven Central.
 We have to generate public and private keys, and store them in Github Secrets with `MAVEN_GPG_PRIVATE_KEY` and `MAVEN_GPG_PASSPHRASE` variables.
 
-These GPG keys are stored in Github Secrets available `Settings` tab of `creedengo` repository, in `Secrets and variables` sub-tab, in `Actions` sub-section.
+These GPG keys are stored in Github Secrets available `Settings` tab of `creedengo-rules-specifications` repository, in `Secrets and variables` sub-tab, in `Actions` sub-section.
 
 Values are generated on local machine with "gpg" command line tool.
 

@@ -112,7 +112,7 @@ When you create an issue, a template is given to you.
 ### How Do I Suggest a New Rule ?
 
 - first of all, check if rule isn't existing yet (in `RULES.md` or in Sonarqube native rules list)
-- if it isn't exist, create a new issue in `creedengo` repository : choose `new rule template`
+- if it isn't exist, create a new issue in `creedengo-rules-specifications` repository : choose `new rule template`
 - fill the template and submit issue
 
 ### Your First Code Contribution
