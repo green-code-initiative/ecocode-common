@@ -25,7 +25,7 @@ SONAR_TOKEN=$2
 SONAR_URL=http://localhost:$SONAR_PORT
 
 # new tag to add to rules (tagging tools) or to use for rules added to new profiles created (install_profile tool)
-TAG_ECODESIGN=ecocode
+TAG_ECODESIGN=creedengo
 
 #####
 # additional configuration for "install_profile.sh" tool
@@ -38,7 +38,7 @@ RULES_KEYS=java:S1696
 FILEPATH_SONAR_RULES_REUSED='./SONAR_RULES_REUSED.md'
 
 # name quality profile to create with "install_profile.sh" tool
-PROFILE_ECODESIGN="EcoCodeProfile"
+PROFILE_ECODESIGN="creedengoProfile"
 
 # programming languages list to create with "install_profile.sh" tool
 PROFILES_LANGUAGE_KEYS=php,py,java,cs
